@@ -9,34 +9,36 @@
 void PrintArray(int[,] matr)
 {
 for (int i = 0; i < matr.GetLength(0); i++)
-{
-for (int j = 0; j < matr.GetLength(1); j++)
-{
-Console.Write($"{matr[i, j]} ");
+    {
+    for (int j = 0; j < matr.GetLength(1); j++)
+    {
+            Console.Write($"{matr[i, j]} ");
+    }
+            Console.WriteLine();
+    }
 }
-Console.WriteLine();
-}
-}
+
 void FillArray(int[,] matr, int min, int max)
 {
 for (int i = 0; i < matr.GetLength(0); i++)
-{
-for (int j = 0; j < matr.GetLength(1); j++)
-{
-matr[i, j] = new Random().Next(min, max+1);
+    {
+    for (int j = 0; j < matr.GetLength(1); j++)
+    {
+        matr[i, j] = new Random().Next(min, max+1);
+    }
+    }
 }
-}
-}
+
 double SumElements1(int[,] matr)
 {
 double sum1 = 0;
 for (int i = 0; i < matr.GetLength(0); i++)
-{
-for (int j = 0; j < matr.GetLength(1); j++)
-{
-if (j == 0) sum1 +=matr[i,j];
-}
-}
+    {
+    for (int j = 0; j < matr.GetLength(1); j++)
+    {
+    if (j == 0) sum1 +=matr[i,j];
+    }
+    }
 return sum1;
 }
 
@@ -44,38 +46,38 @@ double SumElements2(int[,] matr)
 {
 double sum2 = 0;
 for (int i = 0; i < matr.GetLength(0); i++)
-{
-for (int j = 0; j < matr.GetLength(1); j++)
-{
-if (j == 1) sum2 +=matr[i,j];
-}
-}
+    {
+    for (int j = 0; j < matr.GetLength(1); j++)
+    {
+    if (j == 1) sum2 +=matr[i,j];
+    }
+    }
 return sum2;
 }
 
 double SumElements3(int[,] matr)
 {
 double sum3 = 0;
-for (int i = 0; i < matr.GetLength(0); i++)
-{
-for (int j = 0; j < matr.GetLength(1); j++)
-{
-if (j == 2) sum3 +=matr[i,j];
-}
-}
+    for (int i = 0; i < matr.GetLength(0); i++)
+    {
+    for (int j = 0; j < matr.GetLength(1); j++)
+    {
+    if (j == 2) sum3 +=matr[i,j];
+    }
+    }
 return sum3;
 }
 
 double SumElements4(int[,] matr)
 {
 double sum4 = 0;
-for (int i = 0; i < matr.GetLength(0); i++)
-{
-for (int j = 0; j < matr.GetLength(1); j++)
-{
-if (j == 3) sum4 +=matr[i,j];
-}
-}
+    for (int i = 0; i < matr.GetLength(0); i++)
+    {
+    for (int j = 0; j < matr.GetLength(1); j++)
+    {
+    if (j == 3) sum4 +=matr[i,j];
+    }
+    }
 return sum4;
 }
 
